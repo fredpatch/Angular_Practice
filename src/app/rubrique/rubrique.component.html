@@ -1,0 +1,10 @@
+<fieldset>
+    <legend>
+        <h3>
+            {{title}}
+        </h3>
+    </legend>
+    <app-ligne *ngFor="let element of lignes" [dates] = "element.dates"
+                                              [description] = "element.descriptions">
+    </app-ligne>
+</fieldset>
